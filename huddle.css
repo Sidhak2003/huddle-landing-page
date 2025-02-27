@@ -1,235 +1,505 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Unbounded:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --clr: #474747;
-}
-
-body {
-    font-family: "Poppins", serif, monospace;
-
+  --clr: #474747;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 4.7rem;
-    background-color: var(--clr);
-    /* background-color: hsl(193, 100%, 96%); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4.7rem;
+  /* background-color: var(--clr); */
+  background-color: hsl(193, 100%, 96%);
 }
 
 .logo img {
-    width: 8.5rem;
+  width: 8.5rem;
 }
 
 button.wee {
-    background-color: white;
-    color: black;
-    border-radius: 1.5rem;
-    padding: 0.7rem 3rem;
-    font-weight: 700;
-    border: 1px solid #dcdbdb82;
-    box-shadow: 15px 22px 32px -17px rgba(0, 0, 0, 0.61);
+  background-color: white;
+  color: black;
+  border-radius: 1.5rem;
+  padding: 0.7rem 3rem;
+  font-weight: 700;
+  border: 1px solid #dcdbdb82;
+  box-shadow: 15px 22px 32px -17px rgba(0, 0, 0, 0.61);
 }
 
 .main {
-    display: flex;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 #mainBg {
-    background: url('/images/bg-hero-desktop.svg');
-    background-color: hsl(193, 100%, 96%);
-
+  background: url("images/bg-hero-desktop.svg");
+  background-color: hsl(193, 100%, 96%);
 }
 
 .left {
-    width: 45%;
-    padding-left: 5rem;
-    padding-right: 5rem;
+  width: 45%;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .left h1 {
-    font-size: 2.7rem;
-    padding-top: 4.7rem;
-    line-height: 3.5rem;
-    font-weight: 600;
+  font-size: 2.3rem;
+  padding-top: 4.7rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  font-family: "Poppins", serif, monospace;
 }
 
 .left p {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-family: "Open Sans", serif;
 }
 
 .left button {
-    background-color: hsl(322, 100%, 66%);
-    color: white;
-    border: none;
-    padding: 1rem 4rem;
-    border-radius: 2rem;
-    font-size: 0.7rem;
-    font-weight: 600;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
 .right {
-    width: 50%;
-    flex: auto;
+  width: 50%;
+  flex: auto;
 }
 
 .right img {
-    width: 100%;
-    /* height: 25rem; */
-    padding-right: 5rem;
+  width: 100%;
+  /* height: 25rem; */
+  padding-right: 5rem;
 }
 
 .small-1 {
-    display: flex;
-    background-color: white;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    align-items: center;
-    border-radius: 1rem;
-    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 7rem;
+  display: flex;
+  background-color: white;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 7rem;
 }
 
 .small-1-left {
-    padding-left: 100px;
+  padding-left: 100px;
 }
 
 .small-1-right img {
-    width: 19rem;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  width: 19rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .small-1-right {
-    padding-right: 40px;
+  padding-right: 40px;
 }
 
 .small-1-left h2 {
-    font-size: 2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  font-family: "Open Sans", serif;
+  font-weight: 700;
 }
 
 .small-1-left p {
-    padding-right: 200px;
-    padding-top: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-right: 200px;
+  padding-top: 20px;
+  font-family: "Open Sans", serif;
+  color: hsl(208, 11%, 55%);
 }
 
 /* CARD 2 */
 
 .small-2 {
-    display: flex;
-    background-color: white;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    align-items: center;
-    border-radius: 1rem;
-    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 7rem;
+  display: flex;
+  background-color: white;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 7rem;
 }
 
 .small-2-left img {
-    width: 26rem;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 100px;
+  width: 26rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
 }
 
 .small-2-right {
-    padding-left: 230px;
-    padding-right: 40px;
+  padding-left: 230px;
+  padding-right: 40px;
 }
 
 .small-2-right h2 {
-    font-size: 2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  font-family: "Open Sans", serif;
+  font-weight: 700;
 }
 
 .small-2-right p {
-    padding-top: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 20px;
+  font-family: "Open Sans", serif;
+  color: hsl(208, 11%, 55%);
 }
 
-/* footer */
+#box {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: -6rem;
+  z-index: 10;
+  position: relative;
+  padding: 3rem 6rem;
+  margin-top: 6rem;
+  border-radius: 1rem;
+  gap: 2rem;
+  border: 1px solid #dcdbdb82;
+  font-family: "Open Sans", serif;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-footer {
-    background-color: rgb(5, 0, 31);
+.bbtn {
+   background-color: hsl(322, 100%, 66%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+footer{
     display: flex;
-    color: whitesmoke;
-    gap: 1rem;
     flex-direction: column;
-    padding: 3rem 4rem;
+    background-color: hsl(192, 100%, 9%);
+    color: #ffff;
+    padding: 200px 100px 30px;
+     font-family: "Open Sans", serif;
 }
 
-footer .logo img {
-    color: whitesmoke;
+.footer-logo{
+    width: 250px;
+        color: whitesmoke;
     filter: grayscale(100) brightness(100);
 }
-
-footer nav {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 4rem;
-}
-
-.double {
-    grid-column: 1 / span 2;
-}
-
-.flex {
+.footer-sec{
     display: flex;
-    flex-direction: column;
+    margin: 40px 0px;
 }
 
-footer a {
-    color: whitesmoke;
+.footer-sec ul {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Removes default padding */
 }
 
-.copyright {
-    /* margin-left: auto; */
-    justify-self: flex-end;
-    width: max-content;
-    /* text-align: right; */
+.sec-1{
+    min-width: 40%;
+    width: 40%;
+
 }
+.add{
+    display: flex;
+    align-items: flex-start;
+}
+.add img{
+    margin-top: 4px;
+    margin-right: 20px;
+}
+li{
+    margin-bottom: 20px;
+    padding-right: 20px;
+    opacity: 0.9;
+}
+.sec-2,
+.sec-3,
+.sec-4{
+    width: 20%;
+    margin-left: 30px;
+}
+.social{ 
+    display:flex;
+    padding: 0;
+}
+a{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    
+}
+.copy{
+    text-align: right;
+}
+
 
 @media screen and (max-width: 1024px) {
-    .main {
-        flex-direction: column;
-    }
+  .main {
+    flex-direction: column;
+  }
 
-    .left,
-    .small-2-left {
-        flex-direction: column-reverse;
-        width: 100%;
-    }
+  .left,
+  .small-2-left {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 
-    .right,
-    .small-2-right {
-        width: 80%;
-        margin: 0 auto;
-    }
+  .right,
+  .small-2-right {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    .small-1 {
-        flex-direction: column;
-    }
+  .small-1 {
+    flex-direction: column;
+  }
 
-    .small-1-left {
-        width: 100%;
-    }
+  .small-1-left {
+    width: 100%;
+  }
 
-    .small-1-right {
-        width: 80%;
-        margin: 0 auto;
+  .small-1-right {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 1.5rem 1.5rem;
+  }
+
+  button.wee {
+    padding: 0.7rem 1.5rem;
+  }
+
+  .logo img {
+    width: 7rem;
+  }
+
+  .left h1 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .left p {
+    text-align: center;
+  }
+
+  .left button {
+    margin-left: 3rem;
+  }
+
+  .right img {
+    width: 100%;
+    /* height: 25rem; */
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    padding-top: 3rem;
+  }
+
+  .small-1 {
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .small-1-left p {
+    padding-right: 2rem;
+    padding-left: 3.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .small-1-left h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .small-1-left {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .small-2 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .small-1-right img {
+    width: 23rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 2rem;
+  }
+  .small-2-right {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .small-2-right p {
+    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .small-2-right h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #box {
+    display: flex;
+    width: auto;
+  }
+
+  #box h1 {
+    text-align: center;
+  }
+
+  .footer {
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.footer-sec {
+  display: flex;
+  flex-direction: column; /* Stacks sections vertically */
+}
+
+.footer-sec ul {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Removes default padding */
+}
+
+.footer-sec li {
+  padding-right: 0; /* Removes right padding for list items */
+}
+
+.sec-1,
+.sec-2,
+.sec-3,
+.sec-4 {
+  width: 100%; /* Ensures full width for all sections */
+  margin-bottom: 40px; /* Adds space between sections */
+}
+
+.sec-4 {
+  display: flex;
+  justify-content: center; /* Centers social icons horizontally */
+  gap: 10px; /* Adds space between social icons */
+  margin: 10px 0; /* Adds margin at the top and bottom */
+}
+
+.footer-sec a {
+  text-decoration: none; /* Removes underline from links */
+  margin-left: 0; /* Ensures no extra margin */
+}
+
+.copy {
+  text-align: center; /* Centers the copyright text */
+}
+
+.social {
+  display: flex;
+  gap: 10px; /* Adds space between social icons */
+}
+}
+
+@media screen and (max-width: 500px) {
+  .left h1 {
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+
+  .left {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .left button{
+    margin-right: 0rem;
+    margin-left: 1.8rem;
+  }
+  .small-1{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+  }
+
+  .small-1-right img{
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  .small-2{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+  }
+
+  .small-2-left img{
+    width: 80%;
+    padding-left: 3.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .small-2-right h2{
+    text-align: center;
+  }
+
+  .bbtn{
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  #box h1{
+    font-size: 1rem;
+    width: auto;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  #box{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  footer{
+        padding: 200px 30px 30px 30px;
     }
 
 }
